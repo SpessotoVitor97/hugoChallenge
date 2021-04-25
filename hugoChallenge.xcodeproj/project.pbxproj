@@ -1,0 +1,690 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D39F05C2634DA350064193E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D39F05B2634DA350064193E /* AppDelegate.swift */; };
+		2D39F05E2634DA350064193E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D39F05D2634DA350064193E /* SceneDelegate.swift */; };
+		2D39F0602634DA350064193E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D39F05F2634DA350064193E /* ViewController.swift */; };
+		2D39F0632634DA350064193E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D39F0612634DA350064193E /* Main.storyboard */; };
+		2D39F0652634DA360064193E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D39F0642634DA360064193E /* Assets.xcassets */; };
+		2D39F0682634DA360064193E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D39F0662634DA360064193E /* LaunchScreen.storyboard */; };
+		2D39F0732634DA360064193E /* hugoChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D39F0722634DA360064193E /* hugoChallengeTests.swift */; };
+		2D39F07E2634DA360064193E /* hugoChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D39F07D2634DA360064193E /* hugoChallengeUITests.swift */; };
+		2D39F0992634DD460064193E /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D39F0982634DD460064193E /* MainRouter.swift */; };
+		2D39F0A62634DDB00064193E /* StyleGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D39F0A52634DDB00064193E /* StyleGuide.swift */; };
+		2D39F0B32634DE730064193E /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D39F0B22634DE730064193E /* UIColor+Extensions.swift */; };
+		2D8F0F492634ED42003BCCEF /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F0F482634ED42003BCCEF /* UIView+Extensions.swift */; };
+		2D8F0F562634EF0B003BCCEF /* MeetingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F0F552634EF0B003BCCEF /* MeetingsTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2D39F06F2634DA360064193E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D39F0502634DA350064193E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D39F0572634DA350064193E;
+			remoteInfo = hugoChallenge;
+		};
+		2D39F07A2634DA360064193E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D39F0502634DA350064193E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D39F0572634DA350064193E;
+			remoteInfo = hugoChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2D39F0582634DA350064193E /* hugoChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hugoChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D39F05B2634DA350064193E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2D39F05D2634DA350064193E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2D39F05F2634DA350064193E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2D39F0622634DA350064193E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2D39F0642634DA360064193E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D39F0672634DA360064193E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2D39F0692634DA360064193E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D39F06E2634DA360064193E /* hugoChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hugoChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D39F0722634DA360064193E /* hugoChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hugoChallengeTests.swift; sourceTree = "<group>"; };
+		2D39F0742634DA360064193E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D39F0792634DA360064193E /* hugoChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hugoChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D39F07D2634DA360064193E /* hugoChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hugoChallengeUITests.swift; sourceTree = "<group>"; };
+		2D39F07F2634DA360064193E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D39F0982634DD460064193E /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		2D39F0A52634DDB00064193E /* StyleGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleGuide.swift; sourceTree = "<group>"; };
+		2D39F0B22634DE730064193E /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		2D8F0F482634ED42003BCCEF /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		2D8F0F552634EF0B003BCCEF /* MeetingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingsTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D39F0552634DA350064193E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D39F06B2634DA360064193E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D39F0762634DA360064193E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D39F04F2634DA350064193E = {
+			isa = PBXGroup;
+			children = (
+				2D39F05A2634DA350064193E /* hugoChallenge */,
+				2D39F0712634DA360064193E /* hugoChallengeTests */,
+				2D39F07C2634DA360064193E /* hugoChallengeUITests */,
+				2D39F0592634DA350064193E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2D39F0592634DA350064193E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D39F0582634DA350064193E /* hugoChallenge.app */,
+				2D39F06E2634DA360064193E /* hugoChallengeTests.xctest */,
+				2D39F0792634DA360064193E /* hugoChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D39F05A2634DA350064193E /* hugoChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				2D39F0C62634DFE90064193E /* AppCore */,
+				2DB5535B2634E62500F48B45 /* Features */,
+				2D39F0BC2634DF1D0064193E /* Utils */,
+			);
+			path = hugoChallenge;
+			sourceTree = "<group>";
+		};
+		2D39F0712634DA360064193E /* hugoChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				2D39F0722634DA360064193E /* hugoChallengeTests.swift */,
+				2D39F0742634DA360064193E /* Info.plist */,
+			);
+			path = hugoChallengeTests;
+			sourceTree = "<group>";
+		};
+		2D39F07C2634DA360064193E /* hugoChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2D39F07D2634DA360064193E /* hugoChallengeUITests.swift */,
+				2D39F07F2634DA360064193E /* Info.plist */,
+			);
+			path = hugoChallengeUITests;
+			sourceTree = "<group>";
+		};
+		2D39F0BC2634DF1D0064193E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2D39F0A52634DDB00064193E /* StyleGuide.swift */,
+				2D39F0C02634DF240064193E /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2D39F0C02634DF240064193E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2D39F0B22634DE730064193E /* UIColor+Extensions.swift */,
+				2D8F0F482634ED42003BCCEF /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2D39F0C42634DF710064193E /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				2D39F0642634DA360064193E /* Assets.xcassets */,
+				2D39F0692634DA360064193E /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		2D39F0C52634DF810064193E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2D39F0662634DA360064193E /* LaunchScreen.storyboard */,
+				2D39F0612634DA350064193E /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2D39F0C62634DFE90064193E /* AppCore */ = {
+			isa = PBXGroup;
+			children = (
+				2D39F0982634DD460064193E /* MainRouter.swift */,
+				2D39F0CA2634DFF60064193E /* Delegates */,
+				2D39F0C52634DF810064193E /* Storyboards */,
+				2D39F0C42634DF710064193E /* SupportingFiles */,
+			);
+			path = AppCore;
+			sourceTree = "<group>";
+		};
+		2D39F0CA2634DFF60064193E /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				2D39F05B2634DA350064193E /* AppDelegate.swift */,
+				2D39F05D2634DA350064193E /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		2D8F0F5A2634EF13003BCCEF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2D8F0F552634EF0B003BCCEF /* MeetingsTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2D8F0F5E2634EF19003BCCEF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2D39F05F2634DA350064193E /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2DB5535B2634E62500F48B45 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				2D8F0F5E2634EF19003BCCEF /* Controller */,
+				2D8F0F5A2634EF13003BCCEF /* View */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D39F0572634DA350064193E /* hugoChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D39F0822634DA360064193E /* Build configuration list for PBXNativeTarget "hugoChallenge" */;
+			buildPhases = (
+				2D39F0542634DA350064193E /* Sources */,
+				2D39F0552634DA350064193E /* Frameworks */,
+				2D39F0562634DA350064193E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hugoChallenge;
+			productName = hugoChallenge;
+			productReference = 2D39F0582634DA350064193E /* hugoChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D39F06D2634DA360064193E /* hugoChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D39F0852634DA360064193E /* Build configuration list for PBXNativeTarget "hugoChallengeTests" */;
+			buildPhases = (
+				2D39F06A2634DA360064193E /* Sources */,
+				2D39F06B2634DA360064193E /* Frameworks */,
+				2D39F06C2634DA360064193E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D39F0702634DA360064193E /* PBXTargetDependency */,
+			);
+			name = hugoChallengeTests;
+			productName = hugoChallengeTests;
+			productReference = 2D39F06E2634DA360064193E /* hugoChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2D39F0782634DA360064193E /* hugoChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D39F0882634DA360064193E /* Build configuration list for PBXNativeTarget "hugoChallengeUITests" */;
+			buildPhases = (
+				2D39F0752634DA360064193E /* Sources */,
+				2D39F0762634DA360064193E /* Frameworks */,
+				2D39F0772634DA360064193E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D39F07B2634DA360064193E /* PBXTargetDependency */,
+			);
+			name = hugoChallengeUITests;
+			productName = hugoChallengeUITests;
+			productReference = 2D39F0792634DA360064193E /* hugoChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D39F0502634DA350064193E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					2D39F0572634DA350064193E = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					2D39F06D2634DA360064193E = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 2D39F0572634DA350064193E;
+					};
+					2D39F0782634DA360064193E = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 2D39F0572634DA350064193E;
+					};
+				};
+			};
+			buildConfigurationList = 2D39F0532634DA350064193E /* Build configuration list for PBXProject "hugoChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2D39F04F2634DA350064193E;
+			productRefGroup = 2D39F0592634DA350064193E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D39F0572634DA350064193E /* hugoChallenge */,
+				2D39F06D2634DA360064193E /* hugoChallengeTests */,
+				2D39F0782634DA360064193E /* hugoChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D39F0562634DA350064193E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D39F0682634DA360064193E /* LaunchScreen.storyboard in Resources */,
+				2D39F0652634DA360064193E /* Assets.xcassets in Resources */,
+				2D39F0632634DA350064193E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D39F06C2634DA360064193E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D39F0772634DA360064193E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D39F0542634DA350064193E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D8F0F492634ED42003BCCEF /* UIView+Extensions.swift in Sources */,
+				2D39F0602634DA350064193E /* ViewController.swift in Sources */,
+				2D39F0B32634DE730064193E /* UIColor+Extensions.swift in Sources */,
+				2D39F0992634DD460064193E /* MainRouter.swift in Sources */,
+				2D39F05C2634DA350064193E /* AppDelegate.swift in Sources */,
+				2D8F0F562634EF0B003BCCEF /* MeetingsTableViewCell.swift in Sources */,
+				2D39F0A62634DDB00064193E /* StyleGuide.swift in Sources */,
+				2D39F05E2634DA350064193E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D39F06A2634DA360064193E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D39F0732634DA360064193E /* hugoChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D39F0752634DA360064193E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D39F07E2634DA360064193E /* hugoChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2D39F0702634DA360064193E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D39F0572634DA350064193E /* hugoChallenge */;
+			targetProxy = 2D39F06F2634DA360064193E /* PBXContainerItemProxy */;
+		};
+		2D39F07B2634DA360064193E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D39F0572634DA350064193E /* hugoChallenge */;
+			targetProxy = 2D39F07A2634DA360064193E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2D39F0612634DA350064193E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D39F0622634DA350064193E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2D39F0662634DA360064193E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D39F0672634DA360064193E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2D39F0802634DA360064193E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2D39F0812634DA360064193E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2D39F0832634DA360064193E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69KP7AWB28;
+				INFOPLIST_FILE = hugoChallenge/AppCore/SupportingFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.VitorSpessoto.hugoChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2D39F0842634DA360064193E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69KP7AWB28;
+				INFOPLIST_FILE = hugoChallenge/AppCore/SupportingFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.VitorSpessoto.hugoChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2D39F0862634DA360064193E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69KP7AWB28;
+				INFOPLIST_FILE = hugoChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.VitorSpessoto.hugoChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hugoChallenge.app/hugoChallenge";
+			};
+			name = Debug;
+		};
+		2D39F0872634DA360064193E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69KP7AWB28;
+				INFOPLIST_FILE = hugoChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.VitorSpessoto.hugoChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hugoChallenge.app/hugoChallenge";
+			};
+			name = Release;
+		};
+		2D39F0892634DA360064193E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69KP7AWB28;
+				INFOPLIST_FILE = hugoChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.VitorSpessoto.hugoChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = hugoChallenge;
+			};
+			name = Debug;
+		};
+		2D39F08A2634DA360064193E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69KP7AWB28;
+				INFOPLIST_FILE = hugoChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.VitorSpessoto.hugoChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = hugoChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D39F0532634DA350064193E /* Build configuration list for PBXProject "hugoChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D39F0802634DA360064193E /* Debug */,
+				2D39F0812634DA360064193E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D39F0822634DA360064193E /* Build configuration list for PBXNativeTarget "hugoChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D39F0832634DA360064193E /* Debug */,
+				2D39F0842634DA360064193E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D39F0852634DA360064193E /* Build configuration list for PBXNativeTarget "hugoChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D39F0862634DA360064193E /* Debug */,
+				2D39F0872634DA360064193E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D39F0882634DA360064193E /* Build configuration list for PBXNativeTarget "hugoChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D39F0892634DA360064193E /* Debug */,
+				2D39F08A2634DA360064193E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2D39F0502634DA350064193E /* Project object */;
+}
