@@ -20,6 +20,9 @@
 		2D39F0B32634DE730064193E /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D39F0B22634DE730064193E /* UIColor+Extensions.swift */; };
 		2D8F0F492634ED42003BCCEF /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F0F482634ED42003BCCEF /* UIView+Extensions.swift */; };
 		2D8F0F562634EF0B003BCCEF /* MeetingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F0F552634EF0B003BCCEF /* MeetingsTableViewCell.swift */; };
+		2D8F0F7F26350D01003BCCEF /* Meetings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F0F7E26350D01003BCCEF /* Meetings.swift */; };
+		2D8F0F9326350EA6003BCCEF /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F0F9226350EA5003BCCEF /* ApiManager.swift */; };
+		2DC61C76263518F8009A5060 /* MeetinsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC61C75263518F8009A5060 /* MeetinsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		2D39F0B22634DE730064193E /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		2D8F0F482634ED42003BCCEF /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		2D8F0F552634EF0B003BCCEF /* MeetingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingsTableViewCell.swift; sourceTree = "<group>"; };
+		2D8F0F7E26350D01003BCCEF /* Meetings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meetings.swift; sourceTree = "<group>"; };
+		2D8F0F9226350EA5003BCCEF /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		2DC61C75263518F8009A5060 /* MeetinsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetinsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,13 +212,40 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		2D8F0F8326350D06003BCCEF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2D8F0F7E26350D01003BCCEF /* Meetings.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2D8F0F9726350EAB003BCCEF /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				2D8F0F9226350EA5003BCCEF /* ApiManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		2DB5535B2634E62500F48B45 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				2D8F0F5E2634EF19003BCCEF /* Controller */,
+				2D8F0F8326350D06003BCCEF /* Model */,
 				2D8F0F5A2634EF13003BCCEF /* View */,
+				2DC61C7A263518FD009A5060 /* ViewModel */,
+				2D8F0F5E2634EF19003BCCEF /* Controller */,
+				2D8F0F9726350EAB003BCCEF /* Networking */,
 			);
 			path = Features;
+			sourceTree = "<group>";
+		};
+		2DC61C7A263518FD009A5060 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2DC61C75263518F8009A5060 /* MeetinsViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,9 +380,12 @@
 			files = (
 				2D8F0F492634ED42003BCCEF /* UIView+Extensions.swift in Sources */,
 				2D39F0602634DA350064193E /* ViewController.swift in Sources */,
+				2D8F0F9326350EA6003BCCEF /* ApiManager.swift in Sources */,
 				2D39F0B32634DE730064193E /* UIColor+Extensions.swift in Sources */,
 				2D39F0992634DD460064193E /* MainRouter.swift in Sources */,
+				2DC61C76263518F8009A5060 /* MeetinsViewModel.swift in Sources */,
 				2D39F05C2634DA350064193E /* AppDelegate.swift in Sources */,
+				2D8F0F7F26350D01003BCCEF /* Meetings.swift in Sources */,
 				2D8F0F562634EF0B003BCCEF /* MeetingsTableViewCell.swift in Sources */,
 				2D39F0A62634DDB00064193E /* StyleGuide.swift in Sources */,
 				2D39F05E2634DA350064193E /* SceneDelegate.swift in Sources */,

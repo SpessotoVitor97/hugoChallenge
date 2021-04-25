@@ -35,6 +35,8 @@ class MeetingsTableViewCell: UITableViewCell {
     //*************************************************
     // MARK: - Properties
     //*************************************************
+    static let identifier = "MeetingsTableViewCell"
+    
     var title: String = "Meeting with Steve Jobs"
     var details: String = "Sunday, Apr 24, 11:00pm - 12:00pm"
     
