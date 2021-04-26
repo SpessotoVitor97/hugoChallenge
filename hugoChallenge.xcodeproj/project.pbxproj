@@ -92,6 +92,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D16652F263776DB00588CFC /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				2D8F0F8326350D06003BCCEF /* Model */,
+				2D8F0F5A2634EF13003BCCEF /* View */,
+				2DC61C7A263518FD009A5060 /* ViewModel */,
+				2D8F0F5E2634EF19003BCCEF /* Controller */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
 		2D39F04F2634DA350064193E = {
 			isa = PBXGroup;
 			children = (
@@ -231,10 +242,7 @@
 		2DB5535B2634E62500F48B45 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				2D8F0F8326350D06003BCCEF /* Model */,
-				2D8F0F5A2634EF13003BCCEF /* View */,
-				2DC61C7A263518FD009A5060 /* ViewModel */,
-				2D8F0F5E2634EF19003BCCEF /* Controller */,
+				2D16652F263776DB00588CFC /* HomeScreen */,
 				2D8F0F9726350EAB003BCCEF /* Networking */,
 			);
 			path = Features;
