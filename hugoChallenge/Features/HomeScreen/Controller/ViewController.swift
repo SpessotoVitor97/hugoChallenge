@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     // MARK: - Properties
     //*************************************************
     var meetingsArray: [String] = []
+    var router = MainRouter()
     
     //*************************************************
     // MARK: - lifecycle
@@ -58,7 +59,8 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Row \(indexPath) tapped.")
+        guard let navigationController = self.navigationController else { return }
+        router.presentMeetingsDetails(in: navigationController)
     }
 }
 
