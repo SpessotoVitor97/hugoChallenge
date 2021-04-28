@@ -9,11 +9,6 @@ import UIKit
 
 class ViewController: UIViewController {
     //*************************************************
-    // MARK: - Constants
-    //*************************************************
-    private let meetingsCellIdentifier = "MeetingsTableViewCell"
-    
-    //*************************************************
     // MARK: - UI Shared Components
     //*************************************************
     private let meetingsTableView = UITableView()
@@ -22,6 +17,7 @@ class ViewController: UIViewController {
     // MARK: - Properties
     //*************************************************
     var meetingsArray: [String] = []
+    var router = MainRouter()
     
     //*************************************************
     // MARK: - lifecycle
@@ -42,7 +38,7 @@ class ViewController: UIViewController {
     private func setupTableView(_ tableView: UITableView) {
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(MeetingsTableViewCell.self, forCellReuseIdentifier: meetingsCellIdentifier)
+        tableView.register(MeetingsTableViewCell.self, forCellReuseIdentifier: MeetingsTableViewCell.identifier)
         
         self.view.addSubview(tableView)
         tableView.pinEdges(to: self.view)
@@ -58,12 +54,13 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let meetingsCell = tableView.dequeueReusableCell(withIdentifier: meetingsCellIdentifier, for: indexPath) as? MeetingsTableViewCell else { return UITableViewCell() }
+        guard let meetingsCell = tableView.dequeueReusableCell(withIdentifier: MeetingsTableViewCell.identifier, for: indexPath) as? MeetingsTableViewCell else { return UITableViewCell() }
         return meetingsCell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Row \(indexPath) tapped.")
+        guard let navigationController = self.navigationController else { return }
+        router.presentMeetingsDetails(in: navigationController)
     }
 }
 
