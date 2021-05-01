@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Meetings: Codable {
+struct Meeting: Codable {
     let id: String
     let startAt: String
     let endAt: String
