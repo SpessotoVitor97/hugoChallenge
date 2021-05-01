@@ -11,7 +11,8 @@ class ApiClient {
     //*************************************************
     // MARK: - Aliases
     //*************************************************
-    typealias fetchMeetingsHandler = (([Meetings]?, Error?) -> Void)
+    typealias fetchMeetingsHandler = ([Meeting]?, Error?) -> Void
+    typealias fetchDetailsHandler = (MeetingDetailsModel?, Error?) -> Void
     
     //*************************************************
     // MARK: - Properties
@@ -35,16 +36,32 @@ class ApiClient {
     func fetchMeetings(completionHandler: @escaping fetchMeetingsHandler) -> URLSessionTask {
         let url = baseURL
         let task = session.dataTask(with: url) { (data, response, error) in
-            guard let response = response as? HTTPURLResponse, response.statusCode == 200,
-                  error == nil,
-                  let data = data else { fatalError() }
+            guard let response = response as? HTTPURLResponse, response.statusCode == 200, error == nil,
+                  let data = data else { return }
             
             let decoder = JSONDecoder()
             do {
-                let meetings = try decoder.decode([Meetings].self, from: data)
-                self.dispatchResult(meetings: meetings, completionHandler: completionHandler)
+                let meetings = try decoder.decode([Meeting].self, from: data)
+                self.dispatchResult(model: meetings, completionHandler: completionHandler)
             } catch {
-                print("Falhou no decode mano", error.localizedDescription)
+                self.dispatchResult(error: error, completionHandler: completionHandler)
+            }
+        }
+        task.resume()
+        return task
+    }
+    
+    func fetchDetails(completionHandler: @escaping fetchDetailsHandler) -> URLSessionTask {
+        let url = baseURL
+        let task = session.dataTask(with: url) { (data, response, error) in
+            guard let response = response as? HTTPURLResponse, response.statusCode == 200, error == nil,
+                  let data = data else { return }
+            
+            let decoder = JSONDecoder()
+            do {
+                let details = try decoder.decode(MeetingDetailsModel.self, from: data)
+                self.dispatchResult(model: details, completionHandler: completionHandler)
+            } catch {
                 self.dispatchResult(error: error, completionHandler: completionHandler)
             }
         }
@@ -55,13 +72,13 @@ class ApiClient {
     //*************************************************
     // MARK: - Private methods
     //*************************************************
-    private func dispatchResult<Type>(meetings: Type? = nil, error: Error? = nil, completionHandler: @escaping (Type?, Error?) -> Void) {
+    private func dispatchResult<Type>(model: Type? = nil, error: Error? = nil, completionHandler: @escaping (Type?, Error?) -> Void) {
         guard let responseQueue = responseQueue else {
-            completionHandler(meetings, error)
+            completionHandler(model, error)
             return
         }
         responseQueue.async {
-            completionHandler(meetings, error)
+            completionHandler(model, error)
         }
     }
 }

@@ -35,7 +35,7 @@ final class MainRouter {
         window.rootViewController = navigationController
     }
     
-    func presentMeetingsDetails(in navigation: UINavigationController) {
-        MeetingsDetailsRouter().present(in: navigation)
+    func presentMeetingsDetails(in navigation: UINavigationController, with details: Meeting ) {
+        MeetingsDetailsRouter().present(in: navigation, with: details)
     }
 }

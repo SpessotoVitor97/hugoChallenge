@@ -8,8 +8,9 @@
 import UIKit
 
 class MeetingsDetailsRouter {
-    func present(in navigationController: UINavigationController) {
+    func present(in navigationController: UINavigationController, with details: Meeting) {
         let detailsViewController = MeetingsDetailsViewController()
+        detailsViewController.meetingDetails = details
         navigationController.pushViewController(detailsViewController, animated: true)
     }
 }
