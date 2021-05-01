@@ -5,11 +5,9 @@
 //  Created by Vitor Spessoto on 24/04/21.
 //
 
-import Foundation
 import UIKit
 
 final class MainRouter {
-    
     //*************************************************
     // MARK: - Public Properties
     //*************************************************
@@ -35,5 +33,9 @@ final class MainRouter {
         navigationController?.navigationBar.backgroundColor = StyleGuide.ViewStyle.NaviagationBar.backgroundColor
         
         window.rootViewController = navigationController
+    }
+    
+    func presentMeetingsDetails(in navigation: UINavigationController, with details: Meeting ) {
+        MeetingsDetailsRouter().present(in: navigation, with: details)
     }
 }

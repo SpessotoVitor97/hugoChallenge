@@ -20,14 +20,14 @@ class MeetingsTableViewCell: UITableViewCell {
     
     private let detailsLabel: UILabel = {
         let lbl = UILabel()
-        lbl.configure(style: .legend, color: .black)
+        lbl.configure(style: .legend, color: .blue)
         lbl.textAlignment = .left
         return lbl
     }()
     
     private let todayLabel: UILabel = {
         let lbl = UILabel()
-        lbl.configure(style: .legendTitle, color: .blue)
+        lbl.configure(style: .legendTitle, color: .green)
         lbl.textAlignment = .right
         return lbl
     }()
@@ -35,8 +35,10 @@ class MeetingsTableViewCell: UITableViewCell {
     //*************************************************
     // MARK: - Properties
     //*************************************************
-    var title: String = "Meeting with Steve Jobs"
-    var details: String = "Sunday, Apr 24, 11:00pm - 12:00pm"
+    static let identifier = "MeetingsTableViewCell"
+    
+    var title: String = ""
+    var details: (String, String) = ("", "")
     
     //*************************************************
     // MARK: - lifecycle
@@ -47,7 +49,6 @@ class MeetingsTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        
     }
     
     //*************************************************
@@ -56,6 +57,12 @@ class MeetingsTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupUI()
+    }
+    
+    convenience init(title: String, details: (String, String)) {
+        self.init()
+        self.title = title
+        self.details = details
     }
     
     required init?(coder: NSCoder) {
@@ -67,8 +74,8 @@ class MeetingsTableViewCell: UITableViewCell {
     //*************************************************
     func setupUI() {
         titleLabel.text = title
-        detailsLabel.text = details
-        todayLabel.text = "Today"
+        detailsLabel.text = details.0
+        todayLabel.text = details.1
         
         self.contentView.addSubview(titleLabel)
         self.contentView.addSubview(detailsLabel)
